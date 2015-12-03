@@ -17,10 +17,10 @@ RV NO_DEFAULT_INITIALIZATION
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U tests%b		tests.adb		6a543724 NE OO SU IL
+U tests%b		tests.adb		38d18e91 NE OO SU IL
 W ada%s			ada.ads			ada.ali
 W ada.exceptions%s	a-except.adb		a-except.ali
-Z ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
 Z ada.numerics%s	a-numeri.ads		a-numeri.ali
 Z ada.numerics.discrete_random%s
 W ada.tags%s		a-tags.adb		a-tags.ali
@@ -63,14 +63,14 @@ D i-cstrea.ads		20150506105327 e53d8b8e interfaces.c_streams%s
 D liste_generique.ads	20151201231344 34bd58f2 liste_generique%s
 D liste_generique.adb	20151202100002 073fbccc liste_generique%b
 D moteur_jeu.ads	20151203130151 edd6e4c1 moteur_jeu%s
-D moteur_jeu.adb	20151203192602 a019c6c7 moteur_jeu%b
+D moteur_jeu.adb	20151203192642 a019c6c7 moteur_jeu%b
 D moteur_puissance4.ads	20151203121407 eb95eb1c moteur_puissance4%s
 D moteur_puissance4.adb	20151203180035 0ed1017e moteur_puissance4%b
 D participant.ads	20151201134307 4dfe5e91 participant%s
 D partie.ads		20151202122254 737254f8 partie%s
 D partie.adb		20151201222709 3ff39f36 partie%b
 D puissance4.ads	20151203172156 2039db63 puissance4%s
-D puissance4.adb	20151203191429 38c940c8 puissance4%b
+D puissance4.adb	20151203203801 2870e23b puissance4%b
 D system.ads		20150506105331 100301f7 system%s
 D s-conca2.ads		20150506105329 02a0d7d0 system.concat_2%s
 D s-crtl.ads		20150506105326 0ebbdb71 system.crtl%s
@@ -97,58 +97,62 @@ D s-traent.ads		20150506105327 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20150506105330 9d58a4c0 system.unsigned_types%s
 D s-valuns.ads		20150506105332 10a8ed3b system.val_uns%s
 D s-wchcon.ads		20150506105330 1b7d22d2 system.wch_con%s
-D tests.adb		20151203190525 7e7244d5 tests%b
+D tests.adb		20151203210248 dabc74c4 tests%b
 X 1 ada.ads
-16K9*Ada 19e8 54|2r6 2r23
+16K9*Ada 19e8 54|2r6 2r23 3r6 165r9 168r17
+X 4 a-inteio.ads
+18K13*Integer_Text_IO[12|46] 54|3w10 165r13 168r21
 X 8 a-nudira.adb
-51V16 Random[39|83]{20|16I25[54|114]} 40|392b13[20|17[54|114]]
+51V16 Random[39|83]{20|16I25[54|115]} 40|392b13[20|17[54|115]]
 X 11 a-textio.ads
 49K13*Text_IO 471e16 54|2w10 2r27
-166U14*New_Line 54|20s17 29s17 38s17 47s17 56s17
-263U14*Put_Line 54|19s17 21s17 24s25 26s25 30s17 33s25 35s25 39s17 42s25
-. 44s25 48s17 51s25 53s25
+166U14*New_Line 54|21s17 30s17 39s17 48s17 57s17 156s9 158s9 163s9
+263U14*Put_Line 54|20s17 22s17 25s25 27s25 31s17 34s25 36s25 40s17 43s25
+. 45s25 49s17 52s25 54s25 157s9 159s9 160s9 161s9 162s9 167s17
+X 12 a-tiinio.ads
+56U14*Get 54|165s29[4|18] 168s37[4|18]
 X 15 interfac.ads
 68M9*Unsigned_32
 71M9*Unsigned_64
 X 17 liste_generique.ads
-15k9*Liste_Generique 55e20 54|6w6 98r44
+15k9*Liste_Generique 55e20 54|7w6 99r44
 16P10 Liste
 X 19 moteur_jeu.ads
-35k9*Moteur_Jeu 51e15 54|4w6 114r41
-40V14 Choix_Coup{26|17A14[54|95]} 54|139r52[114]
+35k9*Moteur_Jeu 51e15 54|5w6 115r41
+40V14 Choix_Coup{26|17A14[54|96]} 54|140r52[115]
 X 20 moteur_jeu.adb
 16I25 Rand_Range<short_short_integer>
 X 21 moteur_puissance4.ads
-23k9*moteur_puissance4 30e22 54|5w6 101r43
-26V18 Coups_Possibles{17|16P10[54|98]} 54|122r100[101]
-28V18 Eval{integer} 54|123r100[101]
+23k9*moteur_puissance4 30e22 54|6w6 102r43
+26V18 Coups_Possibles{17|16P10[54|99]} 54|123r100[102]
+28V18 Eval{integer} 54|124r100[102]
 X 23 participant.ads
 1K9*Participant 8e16 54|1w6 1r23
-3E10*Joueur 3e38 54|14r25
-3n21*Joueur1{3E10} 54|16r23 84r40 147r40
-3n30*Joueur2{3E10} 54|17r23 108r105 125r89
-6V18*Adversaire{3E10} 54|23s25 32s25 41s25 50s25
+3E10*Joueur 3e38 54|15r25
+3n21*Joueur1{3E10} 54|17r23 85r40 148r40
+3n30*Joueur2{3E10} 54|18r23 109r105 126r89
+6V18*Adversaire{3E10} 54|24s25 33s25 42s25 51s25
 X 24 partie.ads
-28k9*Partie 36e11 54|7w6 66r37 129r37
-34U15 Joue_Partie 54|84s25[66] 147s25[129]
+28k9*Partie 36e11 54|8w6 67r37 130r37
+34U15 Joue_Partie 54|85s25[67] 148s25[130]
 X 26 puissance4.ads
-10k9*puissance4 42e15 54|3w6 61r41 95r41
+10k9*puissance4 42e15 54|4w6 62r41 96r41
 12A14 matrice(integer)<integer><integer>
 13A14 tableau(integer)<integer>
-16A14 Etat<12A14[54|61]>(integer)<integer><integer> 54|66r57[61] 79r34[61]
-. 101r74[95] 114r66[95] 129r57[95] 142r34[95]
-17A14 Coup<13A14[54|61]>(integer)<integer> 54|67r56[61] 98r60[95] 102r118[95]
-. 115r102[95] 130r56[95]
-23V18 Etat_Suivant{16A14[54|61]} 54|70r43[61] 117r102[95] 133r43[95]
-25V14 Est_Gagnant{boolean} 54|71r56[61] 112r118[95] 118r102[95] 134r56[95]
-27V14 Est_Nul{boolean} 54|72r56[61] 119r102[95] 135r56[95]
-29U15 Affiche_Jeu 54|73r56[61] 136r56[95]
-31U15 Affiche_Coup 54|74r56[61] 98r66[95] 109r118[95] 120r102[95] 137r56[95]
-33V14 Coup_Joueur1{17A14[54|61]} 54|75r56[61] 138r56[95]
-35V14 Coup_Joueur2{17A14[54|61]} 54|76r56[61]
-37U15 Initialiser 54|83s25[61] 146s25[95]
-39V18 Est_Possible{boolean} 54|111r118[95]
-40V18 Copie_Etat{16A14[54|95]} 54|126r102[95]
+16A14 Etat<12A14[54|62]>(integer)<integer><integer> 54|67r57[62] 80r34[62]
+. 102r74[96] 115r66[96] 130r57[96] 143r34[96]
+17A14 Coup<13A14[54|62]>(integer)<integer> 54|68r56[62] 99r60[96] 103r118[96]
+. 116r102[96] 131r56[96]
+23V18 Etat_Suivant{16A14[54|62]} 54|71r43[62] 118r102[96] 134r43[96]
+25V14 Est_Gagnant{boolean} 54|72r56[62] 113r118[96] 119r102[96] 135r56[96]
+27V14 Est_Nul{boolean} 54|73r56[62] 120r102[96] 136r56[96]
+29U15 Affiche_Jeu 54|74r56[62] 137r56[96]
+31U15 Affiche_Coup 54|75r56[62] 99r66[96] 110r118[96] 121r102[96] 138r56[96]
+33V14 Coup_Joueur1{17A14[54|62]} 54|76r56[62] 139r56[96]
+35V14 Coup_Joueur2{17A14[54|62]} 54|77r56[62]
+37U15 Initialiser 54|84s25[62] 147s25[96]
+39V18 Est_Possible{boolean} 54|112r118[96]
+40V18 Copie_Etat{16A14[54|96]} 54|127r102[96]
 X 28 system.ads
 67M9*Address
 X 36 s-memory.ads
@@ -161,26 +165,30 @@ X 39 s-rannum.ads
 X 46 s-stalib.adb
 93U14 Break_Start 94i<c,__gnat_break_start>22
 X 54 tests.adb
-11U11*tests 11b11 155l5 155t10
-13U19 test_Participant 13b19 57l13 57t29
-14e17 j1{23|3E10} 16m17 23r36 32r20 41r20 41r36
-14e20 j2{23|3E10} 17m17 23r20 32r36 50r20 50r36
-59U19 test_Partie 59b19 86l13 86t24
-61K21 MyPuissance4[26|10] 62r17 66r44 67r43 71r43 72r43 73r43 74r43 75r43
-. 76r43 79r21
-66K21 MyPartie[24|28] 77r17
-79a17 E{26|16A14[61]} 83m37 83r37 84m37 84r37
-89U19 test_Moteur 89b19 149l13 149t24 153s9
-90i17 hauteur{positive} 95r52 103r105
-91i17 largeur{positive} 95r61 104r105
-92i17 victoire{positive} 95r70 105r105
-93i17 profondeur{positive} 107r105 124r89
-95K21 MyPuissance4[26|10] 96r17 101r61 102r105 109r105 111r105 112r105 114r53
-. 115r89 117r89 118r89 119r89 120r89 126r89 129r44 130r43 134r43 135r43 136r43
-. 137r43 138r43 142r21
-98K25 Liste_Coups[17|15] 99r21 110r105 121r89
-101K25 MyMoteurP4[21|23] 122r89 123r89
-114K25 MyMoteur[19|35] 139r43
-129K21 MyPartie[24|28] 140r17
-142a17 E{26|16A14[95]} 146m37 146r37 147m37 147r37
+12U11*tests 12b11 188l5 188t10
+14U19 test_Participant 14b19 58l13 58t29 173s25
+15e17 j1{23|3E10} 17m17 24r36 33r20 42r20 42r36
+15e20 j2{23|3E10} 18m17 24r20 33r36 51r20 51r36
+60U19 test_Partie 60b19 87l13 87t24 175s25
+62K21 MyPuissance4[26|10] 63r17 67r44 68r43 72r43 73r43 74r43 75r43 76r43
+. 77r43 80r21
+67K21 MyPartie[24|28] 78r17
+80a17 E{26|16A14[62]} 84m37 84r37 85m37 85r37
+90U19 test_Moteur 90b19 150l13 150t24 177s25
+91i17 hauteur{positive} 96r52 104r105
+92i17 largeur{positive} 96r61 105r105
+93i17 victoire{positive} 96r70 106r105
+94i17 profondeur{positive} 108r105 125r89
+96K21 MyPuissance4[26|10] 97r17 102r61 103r105 110r105 112r105 113r105 115r53
+. 116r89 118r89 119r89 120r89 121r89 127r89 130r44 131r43 135r43 136r43 137r43
+. 138r43 139r43 143r21
+99K25 Liste_Coups[17|15] 100r21 111r105 122r89
+102K25 MyMoteurP4[21|23] 123r89 124r89
+115K25 MyMoteur[19|35] 140r43
+130K21 MyPartie[24|28] 141r17
+143a17 E{26|16A14[96]} 147m37 147r37 148m37 148r37
+152i9 choix{integer} 165m33 166r16 166r29 168m41 171r14
+155L11 debut 181r22 184r14
+164L11 DEMANDE
+186L11 fin 179r30
 

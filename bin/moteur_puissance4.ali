@@ -34,7 +34,7 @@ D moteur_puissance4.adb	20151203180035 0ed1017e moteur_puissance4%b
 D participant.ads	20151201134307 4dfe5e91 participant%s
 D partie.ads		20151202122254 737254f8 partie%s
 D puissance4.ads	20151203172156 2039db63 puissance4%s
-D puissance4.adb	20151203191429 38c940c8 puissance4%b
+D puissance4.adb	20151203203801 2870e23b puissance4%b
 D system.ads		20150506105331 100301f7 system%s
 D s-crtl.ads		20150506105326 0ebbdb71 system.crtl%s
 D s-exctab.ads		20150506105331 54135002 system.exception_table%s

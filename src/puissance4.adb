@@ -138,26 +138,26 @@ package body puissance4 is
 		end loop;
 		
 		-- verrif des diag droite
-		for X in Integer range 1.. LARGEUR-3 loop
+		for X in Integer range 1.. LARGEUR - (VICTOIRE - 1) loop
 			if(verif_diag_droite(E,numJoueur,X,1)) then
 				goto fin;
 			end if;
 		end loop;
 		
-		for Y in Integer range 2.. HAUTEUR-3 loop
+		for Y in Integer range 2.. HAUTEUR - (VICTOIRE-1) loop
 			if(verif_diag_droite(E,numJoueur,1,Y)) then
 				goto fin;
 			end if;
 		end loop;
 		
 		-- verrif des diag gauche
-		for X in Integer range 4..LARGEUR loop
+		for X in Integer range VICTOIRE..LARGEUR loop
 			if(verif_diag_gauche(E,numJoueur,X,1)) then
 				goto fin;
 			end if;
 		end loop;
 		
-		for Y in Integer range 2..HAUTEUR-3 loop
+		for Y in Integer range 2..HAUTEUR- (Victoire -1) loop
 			if(verif_diag_gauche(E,numJoueur,LARGEUR,Y)) then
 				goto fin;
 			end if;
@@ -189,7 +189,7 @@ package body puissance4 is
     -- Fonction d'affichage de l'etat courant du jeu
     procedure Affiche_Jeu(E : Etat) is
 		x, y : Positive;
-		val : Integer;
+		val, ind: Integer;
 	begin
 		New_line;
 		Put_line("Affichage du plateau :");
@@ -239,7 +239,13 @@ package body puissance4 is
 			x := x + 1;
 		end loop;
 		New_Line;
-		Put("|1|2|3|4|5|6|7|");
+		ind := 1;
+		for I in Character range '1'..'9' loop
+			exit when ind > LARGEUR;
+			ind := ind + 1;
+			Put("|" & I);
+		end loop;
+		Put("|");
 	end Affiche_Jeu;
 	
     -- Affiche a l'ecran le coup passe en parametre

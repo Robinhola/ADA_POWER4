@@ -1,5 +1,6 @@
 with participant; use participant;
 with Ada.Text_IO; use Ada.Text_IO;
+with Ada.Integer_Text_IO;
 with puissance4;
 with moteur_jeu;
 with moteur_puissance4;
@@ -148,8 +149,40 @@ procedure tests is
 		
 	end test_Moteur;
 
-begin -- tests
---	testParticipant;
-	test_Moteur;
+	choix: Integer := 0;
 
+begin -- tests
+	<<debut>>
+	New_line;
+	Put_line("Procedure de tests : entrer un nombre entre 1 et 4");
+	New_Line;
+	Put_Line("1) testParticipant");
+	Put_Line("2) test_partie");
+	Put_line("3) test_moteur");
+	Put_line("4) Quitter");
+	New_line;
+	<<DEMANDE>>
+	Ada.Integer_Text_IO.Get(choix);
+	while (choix<= 0 Or choix > 4) loop
+		Put_line("Hors champ !");
+		Ada.Integer_Text_IO.Get(choix);
+	end loop;
+	
+	case choix is
+		when 1 =>
+			test_Participant;
+		when 2 =>
+			test_partie;
+		when 3 =>
+			test_Moteur;
+		when 4 =>
+			goto fin;
+		when others =>
+		goto debut;
+	end case;
+	
+	goto debut;
+
+	<<fin>>
+	
 end tests;

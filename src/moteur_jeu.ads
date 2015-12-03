@@ -6,6 +6,7 @@ generic
     type Etat is private;
     type Coup is private;
 	
+	-- Le cout d'une victoire d'un des jouers pour eval
 	Max : Integer;
 
     -- Calcule l'etat suivant en appliquant le coup
@@ -14,7 +15,6 @@ generic
     with function Est_Gagnant(E : Etat; J : Joueur) return Boolean; 
     -- Indique si l'etat courant est un status quo (match nul)
     with function Est_Nul(E : Etat) return Boolean; 
-
     -- Affiche a l'ecran le coup passe en parametre
     with procedure Affiche_Coup(C : in Coup);
     -- Implantation d'un package de liste de coups
@@ -28,7 +28,7 @@ generic
     P : Natural;
     -- Indique le joueur interprete par le moteur
     JoueurMoteur : Joueur;
-	
+	-- initialise un nouvel Etat
 	with function Copie_Etat(E : in Etat) return Etat;
 	
     

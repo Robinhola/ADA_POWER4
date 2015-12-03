@@ -1,0 +1,98 @@
+V "GNAT Lib v2015"
+P ZX
+
+RN
+RV NO_IO
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV SPARK_05
+
+U moteur_puissance4%b	moteur_puissance4.adb	c57d3101 NE OO PK GE IL
+W puissance4%s		puissance4.adb		puissance4.ali
+
+U moteur_puissance4%s	moteur_puissance4.ads	aabb18ab BN EE NE OO PK GE
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W liste_generique%s	liste_generique.adb	liste_generique.ali
+W participant%s		participant.adb		participant.ali
+W puissance4%s		puissance4.adb		puissance4.ali
+
+D ada.ads		20150506105328 3ffc8e18 ada%s
+D a-except.ads		20150506105328 5250cb69 ada.exceptions%s
+D a-inteio.ads		20150506105332 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20150506105327 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20150506105329 119b8fb3 ada.streams%s
+D a-tags.ads		20150506105332 dc4d0634 ada.tags%s
+D a-textio.ads		20150506105332 386df5d4 ada.text_io%s
+D a-tiinio.ads		20150506105328 aa04e5d6 ada.text_io.integer_io%s
+D a-unccon.ads		20150506105331 f9eb8f06 ada.unchecked_conversion%s
+D interfac.ads		20150506105327 6033a23f interfaces%s
+D i-cstrea.ads		20150506105327 e53d8b8e interfaces.c_streams%s
+D liste_generique.ads	20151201231344 34bd58f2 liste_generique%s
+D moteur_puissance4.ads	20151203121407 eb95eb1c moteur_puissance4%s
+D moteur_puissance4.adb	20151203180035 0ed1017e moteur_puissance4%b
+D participant.ads	20151201134307 4dfe5e91 participant%s
+D partie.ads		20151202122254 737254f8 partie%s
+D puissance4.ads	20151203172156 2039db63 puissance4%s
+D puissance4.adb	20151203191429 38c940c8 puissance4%b
+D system.ads		20150506105331 100301f7 system%s
+D s-crtl.ads		20150506105326 0ebbdb71 system.crtl%s
+D s-exctab.ads		20150506105331 54135002 system.exception_table%s
+D s-ficobl.ads		20150506105333 078245e4 system.file_control_block%s
+D s-parame.ads		20150506105331 7e2a0d7f system.parameters%s
+D s-soflin.ads		20150506105328 aa763b52 system.soft_links%s
+D s-stache.ads		20150506105332 a37c21ec system.stack_checking%s
+D s-stalib.ads		20150506105331 fa0a3617 system.standard_library%s
+D s-stoele.ads		20150506105332 2dc34a04 system.storage_elements%s
+D s-traent.ads		20150506105327 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20150506105330 9d58a4c0 system.unsigned_types%s
+D s-wchcon.ads		20150506105330 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 19e8 13|4r6
+X 7 a-textio.ads
+49K13*Text_IO 471e16 13|4w10
+X 12 liste_generique.ads
+15k9*Liste_Generique 55e20 13|2w6 19r33
+16P10 Liste 13|26r75[19] 14|6r75[13|19] 7r39[13|19]
+23U15 Insere_Tete 14|20s45[13|19]
+29V14 Creer_Liste{16P10[13|19]} 14|11s40[13|19]
+X 13 moteur_puissance4.ads
+8+6 Etat 20r32 21r31 26r38 28r27 14|6r38 28r27
+9+6 Coup 18r36 19r49 20r74 14|8r21
+11i1 hauteur{positive}
+11i10 largeur{positive} 14|18r43
+11i19 victoire{positive}
+12i1 max{integer} 14|31r32 33r32
+14i1 P{natural}
+16e1 JoueurMoteur{15|3E10} 14|30r35 32r48
+18U16 Affiche_coup 18>29 19r55
+18*29 C{9+6}
+19K14 Liste_Coups[12|15] 26r63 14|6r63 7r27 11r28 20r33
+20V15 Est_Possible{boolean} 20>28 20>38 20>51 20=63 14|19s28
+20*28 E{8+6}
+20i38 X{integer}
+20e51 J{15|3E10}
+20*63 C{9+6}
+21V15 Est_Gagnant{boolean} 21>27 21>37 14|30s20 32s23
+21*27 E{8+6}
+21e37 J{15|3E10}
+23k9*moteur_puissance4 8z6 9z6 11z1 11z10 11z19 12z1 14z1 16z1 18z16 19z14
+. 20z15 21z15 30l5 30e22 14|3b14 39l5 39t22
+26V18*Coups_Possibles{12|16P10[19]} 26>34 26>44 14|6b18 24l13 24t28
+26*34 E{8+6} 14|6b34 19r41
+26e44 J{15|3E10} 14|6b44 12r20 19r47
+28V18*Eval{integer} 28>23 14|28b18 37l13 37t17
+28*23 E{8+6} 14|28b23 30r32 32r35
+X 14 moteur_puissance4.adb
+7p17 liste_c{12|16P10[13|19]} 11m17 20m60 20r60 23r24
+8*17 C{13|9+6} 19m50 19r50 20r57
+9i17 numJ{integer} 13m25 15m25
+18i21 I{integer} 19r44
+X 15 participant.ads
+1K9*Participant 13|1w6 1r23 15|8e16
+3E10*Joueur 13|16r16 20r55 21r41 26r48 14|6r48 15|3e38
+3n21*Joueur1{3E10} 14|12r24
+6V18*Adversaire{3E10} 14|32s37
+X 17 puissance4.ads
+10k9*puissance4 13|3w6 5w6 14|1w6 17|42e15
+

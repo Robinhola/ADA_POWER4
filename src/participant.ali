@@ -1,0 +1,37 @@
+V "GNAT Lib v2015"
+P ZX
+
+RN
+RV NO_EXCEPTIONS
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_STANDARD_STORAGE_POOLS
+RV SPARK_05
+
+U participant%b		participant.adb		0d0b21f9 NE OO PK IL
+W ada.exceptions%s	a-except.adb		a-except.ali
+W system%s		system.ads		system.ali
+W system.exception_table%s  s-exctab.adb	s-exctab.ali
+W system.standard_library%s  s-stalib.adb	s-stalib.ali
+
+U participant%s		participant.ads		4dfe5e91 EE NE OO PK
+
+D ada.ads		20150506105328 3ffc8e18 ada%s
+D a-except.ads		20150506105328 5250cb69 ada.exceptions%s
+D a-unccon.ads		20150506105331 f9eb8f06 ada.unchecked_conversion%s
+D participant.ads	20151201134307 4dfe5e91 participant%s
+D participant.adb	20151203171215 40f57f68 participant%b
+D system.ads		20150506105331 100301f7 system%s
+D s-exctab.ads		20150506105331 54135002 system.exception_table%s
+D s-parame.ads		20150506105331 7e2a0d7f system.parameters%s
+D s-stalib.ads		20150506105331 fa0a3617 system.standard_library%s
+D s-traent.ads		20150506105327 005bf670 system.traceback_entries%s
+X 4 participant.ads
+1K9*Participant 8l5 8e16 5|1b14 17l5 17t16
+3E10*Joueur 3e38 6r33 6r48 5|3r33 3r48
+3n21*Joueur1{3E10} 5|7r24 10r32
+3n30*Joueur2{3E10} 5|8r32 9r28
+6V18*Adversaire{3E10} 6>29 5|3b18 15l13 15t23
+6e29 J{3E10} 5|3b29 7r20 9r24
+X 5 participant.adb
+4X9 erreur 12r31
+

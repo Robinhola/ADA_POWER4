@@ -1,0 +1,92 @@
+V "GNAT Lib v2015"
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_IO
+RV SPARK_05
+
+U partie%b		partie.adb		3912608b NE OO PK GE IL
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W participant%s		participant.adb		participant.ali
+
+U partie%s		partie.ads		325ca74f BN EE NE OO PK GE
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W liste_generique%s	liste_generique.adb	liste_generique.ali
+W participant%s		participant.adb		participant.ali
+
+D ada.ads		20150506105328 3ffc8e18 ada%s
+D a-except.ads		20150506105328 5250cb69 ada.exceptions%s
+D a-ioexce.ads		20150506105327 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20150506105329 119b8fb3 ada.streams%s
+D a-tags.ads		20150506105332 dc4d0634 ada.tags%s
+D a-textio.ads		20150506105332 386df5d4 ada.text_io%s
+D a-unccon.ads		20150506105331 f9eb8f06 ada.unchecked_conversion%s
+D interfac.ads		20150506105327 6033a23f interfaces%s
+D i-cstrea.ads		20150506105327 e53d8b8e interfaces.c_streams%s
+D liste_generique.ads	20151201231344 34bd58f2 liste_generique%s
+D participant.ads	20151201134307 4dfe5e91 participant%s
+D partie.ads		20151202122254 737254f8 partie%s
+D partie.adb		20151201222709 3ff39f36 partie%b
+D system.ads		20150506105331 100301f7 system%s
+D s-crtl.ads		20150506105326 0ebbdb71 system.crtl%s
+D s-exctab.ads		20150506105331 54135002 system.exception_table%s
+D s-ficobl.ads		20150506105333 078245e4 system.file_control_block%s
+D s-parame.ads		20150506105331 7e2a0d7f system.parameters%s
+D s-soflin.ads		20150506105328 aa763b52 system.soft_links%s
+D s-stache.ads		20150506105332 a37c21ec system.stack_checking%s
+D s-stalib.ads		20150506105331 fa0a3617 system.standard_library%s
+D s-stoele.ads		20150506105332 2dc34a04 system.storage_elements%s
+D s-traent.ads		20150506105327 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20150506105330 9d58a4c0 system.unsigned_types%s
+D s-wchcon.ads		20150506105330 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 19e8 12|2r6 13|1r6 1r23
+X 6 a-textio.ads
+49K13*Text_IO 471e16 12|2w10 13|1w10 1r27
+166U14*New_Line 13|39s25 50s17
+242U14*Put 13|40s25 41s25 42s25 43s25
+263U14*Put_Line 13|45s25 47s25
+X 10 liste_generique.ads
+15k9*Liste_Generique 55e20 12|1w6
+X 11 participant.ads
+1K9*Participant 8e16 12|1w23 3r5 13|2w6 2r23
+3E10*Joueur 3e38 12|16r45 34r51 13|10r55 11r33
+3n21*Joueur1{3E10} 13|17r45
+3n30*Joueur2{3E10} 13|30r37
+6V18*Adversaire{3E10} 13|16s43 27s42 38s36
+X 12 partie.ads
+6+10 Etat 14r36 14r59 16r35 18r31 20r36 24r36 26r36 34r38 13|10r42
+7+10 Coup 14r46 22r40 24r49 26r49 13|13r28
+10a5 Nom_Joueur1{string}
+12a5 Nom_Joueur2{string}
+14V19 Etat_Suivant{6+10} 14>32 14>42 13|24s30
+14*32 E{6+10}
+14*42 C{7+10}
+16V19 Est_Gagnant{boolean} 16>31 16>41 13|16s28 38s21
+16*31 E{6+10}
+16e41 J{11|3E10}
+18V19 Est_Nul{boolean} 18>27 13|16s78 44s24
+18*27 E{6+10}
+20U20 Affiche_Jeu 20>32 13|15s17 25s25
+20*32 E{6+10}
+22U20 Affiche_Coup 22>33 13|23s25
+22*33 C{7+10}
+24V19 Coup_Joueur1{7+10} 24>32 13|18s45
+24*32 E{6+10}
+26V19 Coup_Joueur2{7+10} 26>32 13|20s45
+26*32 E{6+10}
+28k9*Partie 6z10 7z10 10z5 12z5 14z19 16z19 18z19 20z20 22z20 24z19 26z19
+. 36l5 36e11 13|5b14 54l5 54t11
+34U15*Joue_Partie 34=27 34>44 13|10b19 52l13 52t24
+34*27 E{6+10} 13|10b31 15r29 16r40 16r86 18r58 20r58 24m25 24r43 25r37 38r33
+. 44r32
+34e44 J{11|3E10} 13|10b48 11r43
+X 13 partie.adb
+11e17 joueurCourant{11|3E10} 16r54 17r29 27m25 27r53 30r21 38r47
+12a17 s{string} 31m25 34m25 40r29
+12a20 a{string} 32m25 35m25 42r29
+13*17 coupJoue{12|7+10} 18m33 20m33 23r38 24r46
+

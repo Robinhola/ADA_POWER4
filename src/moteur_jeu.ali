@@ -1,0 +1,138 @@
+V "GNAT Lib v2015"
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_IO
+RV NO_RECURSION
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV SPARK_05
+
+U moteur_jeu%b		moteur_jeu.adb		946b82b0 NE OO PK GE IL
+W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.discrete_random%s
+Z system%s		system.ads		system.ali
+Z system.random_numbers%s  s-rannum.adb		s-rannum.ali
+
+U moteur_jeu%s		moteur_jeu.ads		acf81776 BN EE NE OO PK GE
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W liste_generique%s	liste_generique.adb	liste_generique.ali
+W participant%s		participant.adb		participant.ali
+
+D ada.ads		20150506105328 3ffc8e18 ada%s
+D a-except.ads		20150506105328 5250cb69 ada.exceptions%s
+D a-inteio.ads		20150506105332 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20150506105327 e4a01f64 ada.io_exceptions%s
+D a-numeri.ads		20150506105328 bb51c45a ada.numerics%s
+D a-nudira.ads		20150506105328 2fef2912 ada.numerics.discrete_random%s
+D a-nudira.adb		20150506105328 e57ce22b ada.numerics.discrete_random%b
+D a-stream.ads		20150506105329 119b8fb3 ada.streams%s
+D a-tags.ads		20150506105332 dc4d0634 ada.tags%s
+D a-textio.ads		20150506105332 386df5d4 ada.text_io%s
+D a-tiinio.ads		20150506105328 aa04e5d6 ada.text_io.integer_io%s
+D a-unccon.ads		20150506105331 f9eb8f06 ada.unchecked_conversion%s
+D interfac.ads		20150506105327 6033a23f interfaces%s
+D i-cstrea.ads		20150506105327 e53d8b8e interfaces.c_streams%s
+D liste_generique.ads	20151201231344 34bd58f2 liste_generique%s
+D moteur_jeu.ads	20151203130151 edd6e4c1 moteur_jeu%s
+D moteur_jeu.adb	20151203192602 a019c6c7 moteur_jeu%b
+D participant.ads	20151201134307 4dfe5e91 participant%s
+D system.ads		20150506105331 100301f7 system%s
+D s-crtl.ads		20150506105326 0ebbdb71 system.crtl%s
+D s-exctab.ads		20150506105331 54135002 system.exception_table%s
+D s-ficobl.ads		20150506105333 078245e4 system.file_control_block%s
+D s-parame.ads		20150506105331 7e2a0d7f system.parameters%s
+D s-rannum.ads		20150506105329 99ade2f2 system.random_numbers%s
+D s-soflin.ads		20150506105328 aa763b52 system.soft_links%s
+D s-stache.ads		20150506105332 a37c21ec system.stack_checking%s
+D s-stalib.ads		20150506105331 fa0a3617 system.standard_library%s
+D s-stoele.ads		20150506105332 2dc34a04 system.storage_elements%s
+D s-traent.ads		20150506105327 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20150506105330 9d58a4c0 system.unsigned_types%s
+D s-wchcon.ads		20150506105330 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 19e8 16|3r6 17|1r6 2r6 17r44
+X 3 a-inteio.ads
+18K13*Integer_Text_IO[11|46] 17|1w10
+X 5 a-numeri.ads
+16K13*Numerics 32e17 17|2r10 17r48
+X 6 a-nudira.ads
+44k22*Discrete_Random 73e33 17|2w19 17r57
+48R9 Generator<24|63R9> 17|18r36[17]
+50V13 Random{17|16I25} 17|29s29[17] 41s49[17]
+53U14 Reset<24|100p14> 17|28s22[17]
+X 10 a-textio.ads
+49K13*Text_IO 471e16 16|3w10
+X 15 liste_generique.ads
+15k9*Liste_Generique 55e20 16|2w6 21r37
+16P10 Liste 16|24r76[21] 17|9r37[16|21] 57r37[16|21]
+17P10 Iterateur 17|10r23[16|21] 60r23[16|21]
+26U15 Libere_Liste 17|49s17[16|21] 85s25[16|21] 96s25[16|21]
+32V14 Creer_Iterateur{17P10[16|21]} 17|23s24[16|21] 73s24[16|21]
+35U15 Libere_Iterateur 17|48s17[16|21]
+38U15 Suivant 17|33s25[16|21] 81s33[16|21] 92s33[16|21]
+41V14 Element_Courant{16|7+10} 17|24s22[16|21] 34s38[16|21] 78s35[16|21]
+. 82s43[16|21] 89s35[16|21] 93s43[16|21]
+44V14 A_Suivant{boolean} 17|32s23[16|21] 80s32[16|21] 91s32[16|21]
+X 16 moteur_jeu.ads
+6+10 Etat 12r36 12r59 14r35 16r31 24r39 26r28 32r41 32r54 40r29 48r31 17|8r29
+. 54r31 55r26
+7+10 Coup 12r46 19r40 21r53 40r42 48r54 17|8r42 11r32 54r54 56r26
+9i9 Max{integer} 17|12r48 32r50
+12V19 Etat_Suivant{6+10} 12>32 12>42 17|62s27
+12*32 E{6+10}
+12*42 C{7+10}
+14V19 Est_Gagnant{boolean} 14>31 14>41 17|64s29
+14*31 E{6+10}
+14e41 J{18|3E10}
+16V19 Est_Nul{boolean} 16>27 17|64s49
+16*27 E{6+10}
+19U20 Affiche_Coup 19>33 21r59
+19*33 C{7+10}
+21K18 Liste_Coups[15|15] 22r13 24r64
+24V19 Coups_Possibles{15|16P10[21]} 24>35 24>45 17|22s38 72s38
+24*35 E{6+10}
+24e45 J{18|3E10}
+26V19 Eval{integer} 26>24 17|66s40 68s42
+26*24 E{6+10}
+28i5 P{natural} 17|26r41 35r54
+30e5 JoueurMoteur{18|3E10} 17|22r57 26r47 35r68 65r30 76r24
+32V23 Copie_Etat{6+10} 32>34
+32*34 E{6+10}
+35k9*Moteur_Jeu 6z10 7z10 9z9 12z19 14z19 16z19 19z20 21z18 24z19 26z19 28z5
+. 30z5 32z23 48E14 51l5 51e15 17|3b14 102l5 102t15
+40V14*Choix_Coup{7+10} 40>25 17|8b14 52l13 52t23
+40*25 E{6+10} 17|8b25 22r54 26r38 35r51
+48V14 Eval_Min_Max{integer} 48>27 48>37 48>50 48>60 17|26s25 35s38 54b14
+. 79s37 83s67 90s37 94s67 100l13 100t25
+48*27 E{6+10} 17|54b27 62r40 64r41 64r57 66r45 68r47
+48i37 P{natural} 17|54b37 64r20 66r50 68r52 79r58 83r88 90r58 94r88
+48*50 C{7+10} 17|54b50 62r43
+48e60 J{18|3E10} 17|54b60 64r43 65r28 72r73 76r20 79r81 83r111 90r81 94r111
+X 17 moteur_jeu.adb
+9p17 l_coups_possibles{15|16P10[16|21]} 22m17 23r40 49m30 49r30
+10p17 Ite{15|17P10[16|21]} 23m17 24r38 32r33 33m33 33r33 34r54 48m34 48r34
+11*17 C{16|7+10} 24m17 26r44 39m33 44m41 50r24
+11*20 coup_suiv{16|7+10} 34m25 35r57 39r38 44r46
+12i17 gain{integer} 26m17 32r42 37r40 38m33 40r44 43m41
+12i23 nouv_gain{integer} 35m25 37r28 38r41 40r32 43r49
+16I25 Rand_Range<short_short_integer> 17r73 19r26
+17K28 Rand_Int[6|44] 18r27 28r13 29r20 41r40
+18r20 seed{6|48R9[17]} 28r28 29r36 41r56
+19i20 Num{16I25} 29m13 41m33 42r36
+55*17 Efutur{16|6+10} 62m17 72r54 79r50 83r80 90r50 94r80
+56*17 Cfutur{16|7+10} 78m25 79r63 82m33 83r93 89m25 90r63 93m33 94r93
+57p17 l_coups_possibles{15|16P10[16|21]} 72m17 73r40 85m38 85r38 96m38 96r38
+58i17 cout_max{integer} 90m25 94m33 94r57 97r32
+59i17 cout_min{integer} 79m25 83m33 83r57 86r32
+60p17 Ite{15|17P10[16|21]} 73m17 78r51 80r42 81m41 81r41 82r59 89r51 91r42
+. 92m41 92r41 93r59
+X 18 participant.ads
+1K9*Participant 16|1w6 1r23 18|8e16
+3E10*Joueur 16|14r45 24r49 30r20 48r64 17|54r64 18|3e38
+6V18*Adversaire{3E10} 17|72s62 79s70 83s100 90s70 94s100
+

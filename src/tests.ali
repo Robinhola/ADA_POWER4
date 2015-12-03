@@ -1,0 +1,186 @@
+V "GNAT Lib v2015"
+M P W=b
+P SS ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LOCAL_ALLOCATORS
+RV NO_NESTED_FINALIZATION
+RV NO_RECURSION
+RV NO_STANDARD_ALLOCATORS_AFTER_ELABORATION
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U tests%b		tests.adb		6a543724 NE OO SU IL
+W ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+Z ada.numerics%s	a-numeri.ads		a-numeri.ali
+Z ada.numerics.discrete_random%s
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z ada.unchecked_deallocation%s
+W liste_generique%s	liste_generique.adb	liste_generique.ali
+W moteur_jeu%s		moteur_jeu.adb		moteur_jeu.ali
+W moteur_puissance4%s	moteur_puissance4.adb	moteur_puissance4.ali
+W participant%s		participant.adb		participant.ali
+W partie%s		partie.adb		partie.ali
+W puissance4%s		puissance4.adb		puissance4.ali
+W system%s		system.ads		system.ali
+W system.concat_2%s	s-conca2.adb		s-conca2.ali
+W system.exception_table%s  s-exctab.adb	s-exctab.ali
+W system.finalization_masters%s  s-finmas.adb	s-finmas.ali
+W system.pool_global%s	s-pooglo.adb		s-pooglo.ali
+Z system.random_numbers%s  s-rannum.adb		s-rannum.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.standard_library%s  s-stalib.adb	s-stalib.ali
+W system.storage_elements%s  s-stoele.adb	s-stoele.ali
+W system.storage_pools%s  s-stopoo.adb		s-stopoo.ali
+W system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
+
+D ada.ads		20150506105328 3ffc8e18 ada%s
+D a-except.ads		20150506105328 5250cb69 ada.exceptions%s
+D a-finali.ads		20150506105331 69f99942 ada.finalization%s
+D a-inteio.ads		20150506105332 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20150506105327 e4a01f64 ada.io_exceptions%s
+D a-numeri.ads		20150506105328 bb51c45a ada.numerics%s
+D a-nudira.ads		20150506105328 2fef2912 ada.numerics.discrete_random%s
+D a-nudira.adb		20150506105328 e57ce22b ada.numerics.discrete_random%b
+D a-stream.ads		20150506105329 119b8fb3 ada.streams%s
+D a-tags.ads		20150506105332 dc4d0634 ada.tags%s
+D a-textio.ads		20150506105332 386df5d4 ada.text_io%s
+D a-tiinio.ads		20150506105328 aa04e5d6 ada.text_io.integer_io%s
+D a-unccon.ads		20150506105331 f9eb8f06 ada.unchecked_conversion%s
+D a-uncdea.ads		20150506105330 f15a5ed1 ada.unchecked_deallocation%s
+D interfac.ads		20150506105327 6033a23f interfaces%s
+D i-cstrea.ads		20150506105327 e53d8b8e interfaces.c_streams%s
+D liste_generique.ads	20151201231344 34bd58f2 liste_generique%s
+D liste_generique.adb	20151202100002 073fbccc liste_generique%b
+D moteur_jeu.ads	20151203130151 edd6e4c1 moteur_jeu%s
+D moteur_jeu.adb	20151203192602 a019c6c7 moteur_jeu%b
+D moteur_puissance4.ads	20151203121407 eb95eb1c moteur_puissance4%s
+D moteur_puissance4.adb	20151203180035 0ed1017e moteur_puissance4%b
+D participant.ads	20151201134307 4dfe5e91 participant%s
+D partie.ads		20151202122254 737254f8 partie%s
+D partie.adb		20151201222709 3ff39f36 partie%b
+D puissance4.ads	20151203172156 2039db63 puissance4%s
+D puissance4.adb	20151203191429 38c940c8 puissance4%b
+D system.ads		20150506105331 100301f7 system%s
+D s-conca2.ads		20150506105329 02a0d7d0 system.concat_2%s
+D s-crtl.ads		20150506105326 0ebbdb71 system.crtl%s
+D s-exctab.ads		20150506105331 54135002 system.exception_table%s
+D s-ficobl.ads		20150506105333 078245e4 system.file_control_block%s
+D s-finmas.ads		20150506105330 814daec4 system.finalization_masters%s
+D s-finroo.ads		20150506105331 4ff27390 system.finalization_root%s
+D s-imguns.ads		20150506105328 9ff43cf7 system.img_uns%s
+D s-memory.ads		20150506105329 597d6634 system.memory%s
+D s-parame.ads		20150506105331 7e2a0d7f system.parameters%s
+D s-pooglo.ads		20150506105326 542f33d0 system.pool_global%s
+D s-rannum.ads		20150506105329 99ade2f2 system.random_numbers%s
+D s-rannum.adb		20150506105332 20ba1217 system.random_numbers%b
+D s-ransee.ads		20150506105332 01a57b33 system.random_seed%s
+D s-secsta.ads		20150506105331 86a2856d system.secondary_stack%s
+D s-soflin.ads		20150506105328 aa763b52 system.soft_links%s
+D s-stache.ads		20150506105332 a37c21ec system.stack_checking%s
+D s-stalib.ads		20150506105331 fa0a3617 system.standard_library%s
+D s-stalib.adb		20150506105326 f2fe2716 system.standard_library%b
+D s-stoele.ads		20150506105332 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20150506105328 b16154c2 system.storage_pools%s
+D s-stposu.ads		20150506105327 97a6219c system.storage_pools.subpools%s
+D s-traent.ads		20150506105327 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20150506105330 9d58a4c0 system.unsigned_types%s
+D s-valuns.ads		20150506105332 10a8ed3b system.val_uns%s
+D s-wchcon.ads		20150506105330 1b7d22d2 system.wch_con%s
+D tests.adb		20151203190525 7e7244d5 tests%b
+X 1 ada.ads
+16K9*Ada 19e8 54|2r6 2r23
+X 8 a-nudira.adb
+51V16 Random[39|83]{20|16I25[54|114]} 40|392b13[20|17[54|114]]
+X 11 a-textio.ads
+49K13*Text_IO 471e16 54|2w10 2r27
+166U14*New_Line 54|20s17 29s17 38s17 47s17 56s17
+263U14*Put_Line 54|19s17 21s17 24s25 26s25 30s17 33s25 35s25 39s17 42s25
+. 44s25 48s17 51s25 53s25
+X 15 interfac.ads
+68M9*Unsigned_32
+71M9*Unsigned_64
+X 17 liste_generique.ads
+15k9*Liste_Generique 55e20 54|6w6 98r44
+16P10 Liste
+X 19 moteur_jeu.ads
+35k9*Moteur_Jeu 51e15 54|4w6 114r41
+40V14 Choix_Coup{26|17A14[54|95]} 54|139r52[114]
+X 20 moteur_jeu.adb
+16I25 Rand_Range<short_short_integer>
+X 21 moteur_puissance4.ads
+23k9*moteur_puissance4 30e22 54|5w6 101r43
+26V18 Coups_Possibles{17|16P10[54|98]} 54|122r100[101]
+28V18 Eval{integer} 54|123r100[101]
+X 23 participant.ads
+1K9*Participant 8e16 54|1w6 1r23
+3E10*Joueur 3e38 54|14r25
+3n21*Joueur1{3E10} 54|16r23 84r40 147r40
+3n30*Joueur2{3E10} 54|17r23 108r105 125r89
+6V18*Adversaire{3E10} 54|23s25 32s25 41s25 50s25
+X 24 partie.ads
+28k9*Partie 36e11 54|7w6 66r37 129r37
+34U15 Joue_Partie 54|84s25[66] 147s25[129]
+X 26 puissance4.ads
+10k9*puissance4 42e15 54|3w6 61r41 95r41
+12A14 matrice(integer)<integer><integer>
+13A14 tableau(integer)<integer>
+16A14 Etat<12A14[54|61]>(integer)<integer><integer> 54|66r57[61] 79r34[61]
+. 101r74[95] 114r66[95] 129r57[95] 142r34[95]
+17A14 Coup<13A14[54|61]>(integer)<integer> 54|67r56[61] 98r60[95] 102r118[95]
+. 115r102[95] 130r56[95]
+23V18 Etat_Suivant{16A14[54|61]} 54|70r43[61] 117r102[95] 133r43[95]
+25V14 Est_Gagnant{boolean} 54|71r56[61] 112r118[95] 118r102[95] 134r56[95]
+27V14 Est_Nul{boolean} 54|72r56[61] 119r102[95] 135r56[95]
+29U15 Affiche_Jeu 54|73r56[61] 136r56[95]
+31U15 Affiche_Coup 54|74r56[61] 98r66[95] 109r118[95] 120r102[95] 137r56[95]
+33V14 Coup_Joueur1{17A14[54|61]} 54|75r56[61] 138r56[95]
+35V14 Coup_Joueur2{17A14[54|61]} 54|76r56[61]
+37U15 Initialiser 54|83s25[61] 146s25[95]
+39V18 Est_Possible{boolean} 54|111r118[95]
+40V18 Copie_Etat{16A14[54|95]} 54|126r102[95]
+X 28 system.ads
+67M9*Address
+X 36 s-memory.ads
+53V13*Alloc{28|67M9} 103i<c,__gnat_malloc>22
+68U14*Free 104i<c,__gnat_free>22
+76V13*Realloc{28|67M9} 105i<c,__gnat_realloc>22
+X 39 s-rannum.ads
+75V13*Random{15|68M9} 40|221i21
+76V13*Random{15|71M9} 40|221i21
+X 46 s-stalib.adb
+93U14 Break_Start 94i<c,__gnat_break_start>22
+X 54 tests.adb
+11U11*tests 11b11 155l5 155t10
+13U19 test_Participant 13b19 57l13 57t29
+14e17 j1{23|3E10} 16m17 23r36 32r20 41r20 41r36
+14e20 j2{23|3E10} 17m17 23r20 32r36 50r20 50r36
+59U19 test_Partie 59b19 86l13 86t24
+61K21 MyPuissance4[26|10] 62r17 66r44 67r43 71r43 72r43 73r43 74r43 75r43
+. 76r43 79r21
+66K21 MyPartie[24|28] 77r17
+79a17 E{26|16A14[61]} 83m37 83r37 84m37 84r37
+89U19 test_Moteur 89b19 149l13 149t24 153s9
+90i17 hauteur{positive} 95r52 103r105
+91i17 largeur{positive} 95r61 104r105
+92i17 victoire{positive} 95r70 105r105
+93i17 profondeur{positive} 107r105 124r89
+95K21 MyPuissance4[26|10] 96r17 101r61 102r105 109r105 111r105 112r105 114r53
+. 115r89 117r89 118r89 119r89 120r89 126r89 129r44 130r43 134r43 135r43 136r43
+. 137r43 138r43 142r21
+98K25 Liste_Coups[17|15] 99r21 110r105 121r89
+101K25 MyMoteurP4[21|23] 122r89 123r89
+114K25 MyMoteur[19|35] 139r43
+129K21 MyPartie[24|28] 140r17
+142a17 E{26|16A14[95]} 146m37 146r37 147m37 147r37
+

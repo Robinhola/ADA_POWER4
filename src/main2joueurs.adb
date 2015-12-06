@@ -32,12 +32,12 @@ procedure Main2Joueurs is
 
 begin
 	New_line;
-   Put_Line("Puissance 4");
-   Put_Line("");
-   Put_Line("Joueur 1 : X"); 
-   Put_Line("Joueur 2 : O");
+   	Put_Line("Puissance 4");
+   	Put_Line("");
+   	Put_Line("Joueur 1 : X"); 
+   	Put_Line("Joueur 2 : O");
    
-   MyPuissance4.Initialiser(P);
-   
-   Joue_Partie(P, Joueur1);
+   	MyPuissance4.Initialiser(P);
+   	Joue_Partie(P, Joueur1);
+	
 end Main2Joueurs;

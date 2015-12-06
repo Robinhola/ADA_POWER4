@@ -21,7 +21,7 @@ generic
 	with package Liste_Coups is new Liste_Generique(Coup, Affiche_Coup);
 	-- Indique si un coup est possible dans telle ou telle colonne 
 	-- et crée le coup en question
-	with function Est_Possible(E : Etat; X : Integer; J : Joueur; C : in out Coup) return Boolean;
+	with Procedure Est_Possible(E : Etat; X : Integer; J : Joueur; C : in out Coup; Ans : out Boolean);
 	-- indique la victoire d'un joueur J
 	with function Est_Gagnant(E : Etat; J : Joueur) return Boolean; 
 

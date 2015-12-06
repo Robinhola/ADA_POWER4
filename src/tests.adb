@@ -53,8 +53,8 @@ procedure tests is
 		else 
 			Put_line("NON OK");
 		end if; 
-		
 		New_line;
+		
 	end test_Participant;
 	
 	procedure test_Partie is

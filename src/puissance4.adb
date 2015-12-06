@@ -313,7 +313,7 @@ package body puissance4 is
 		return C;
 	end Coup_Joueur2;
 		
-	function Est_Possible(E : Etat; X : Integer; J : Joueur; C : in out Coup) return Boolean is
+	procedure Est_Possible(E : Etat; X : Integer; J : Joueur; C : in out Coup; Ans : out Boolean) is
 		nouv_Coup : Coup;
 		joueur_actuel : Integer;
 	begin
@@ -327,9 +327,9 @@ package body puissance4 is
 			nouv_Coup(1) := X;
 			nouv_Coup(2) := joueur_actuel;
 			C := nouv_Coup;
-			return true;
+			Ans := true;
 		else
-			return false;
+			Ans := false;
 		end if; 
 		
 	end Est_Possible;

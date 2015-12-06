@@ -11,8 +11,7 @@ package puissance4 is
 	
 	type matrice is Array(1..LARGEUR, 1..HAUTEUR) of Integer; -- 7 colonnes et 6 lignes, l'origine est le coin en bas à gauche du plateau
 	type tableau is Array(1..2) of Integer; -- la première case stocke la position du Coup joué 
-											-- et la deuxième case stocke le joueur qui l'a joué
-											
+											-- et la deuxième case stocke le joueur qui l'a joué							
 	type Etat is new matrice;
 	type Coup is new tableau;
 
@@ -36,7 +35,8 @@ package puissance4 is
 	
     procedure Initialiser(E : in out Etat);
 	
-	function Est_Possible(E : Etat; X : Integer; J : Joueur; C : in out Coup) return Boolean;
+	procedure Est_Possible(E : Etat; X : Integer; J : Joueur; C : in out Coup; Ans : out Boolean);
+	
 	function Copie_Etat(E : in Etat) return Etat;
 							
 end puissance4;

@@ -7,6 +7,7 @@ package body moteur_puissance4 is
 		liste_c : Liste_Coups.Liste;
 		C : Coup;
 		numJ : Integer;
+		Ans : Boolean;
 	begin
 		liste_c := Liste_Coups.Creer_Liste;
 		if(J = Joueur1) then
@@ -16,7 +17,8 @@ package body moteur_puissance4 is
 		end if;
 		
 		for I in Integer range 1..LARGEUR+1 loop
-			if(Est_Possible(E, I, J, C)) then
+			Est_Possible(E, I, J, C, Ans);
+			if(Ans) then
 				Liste_Coups.Insere_Tete(C, liste_c);
 			end if;
 		end loop;
